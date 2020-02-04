@@ -21,6 +21,11 @@ class Team
      */
     private $name;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $shortName;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -35,6 +40,24 @@ class Team
     {
         $this->name = $name;
 
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getShortName()
+    {
+        return $this->shortName;
+    }
+
+    /**
+     * @param mixed $shortName
+     * @return Team
+     */
+    public function setShortName($shortName)
+    {
+        $this->shortName = $shortName;
         return $this;
     }
 }
