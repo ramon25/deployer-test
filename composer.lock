@@ -1324,12 +1324,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramon25/deployer-base.git",
-                "reference": "20654a9929dc8d9723e6c1fbd4bbacba65aa6c9d"
+                "reference": "50e67e033a8ea00fd7adfffde1234f767666cdfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramon25/deployer-base/zipball/20654a9929dc8d9723e6c1fbd4bbacba65aa6c9d",
-                "reference": "20654a9929dc8d9723e6c1fbd4bbacba65aa6c9d",
+                "url": "https://api.github.com/repos/ramon25/deployer-base/zipball/50e67e033a8ea00fd7adfffde1234f767666cdfe",
+                "reference": "50e67e033a8ea00fd7adfffde1234f767666cdfe",
                 "shasum": ""
             },
             "type": "library",
@@ -1340,7 +1340,7 @@
                 "source": "https://github.com/ramon25/deployer-base/tree/master",
                 "issues": "https://github.com/ramon25/deployer-base/issues"
             },
-            "time": "2020-02-04T14:53:01+00:00"
+            "time": "2020-02-04T15:11:49+00:00"
         },
         {
             "name": "psr/cache",

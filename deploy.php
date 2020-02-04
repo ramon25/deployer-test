@@ -12,6 +12,7 @@ host('production')
     ->stage('prod')
     ->hostname('167.71.62.124')
     ->user('root')
+    ->identityFile('{{private_key}}')
     ->set('deploy_path', '/var/www/html')
     ->set('branch', function () {
         return input()->getOption('branch') ?: 'production';
@@ -21,6 +22,7 @@ host('production2')
     ->stage('prod')
     ->hostname('167.172.183.75')
     ->user('root')
+    ->identityFile('{{private_key}}')
     ->set('deploy_path', '/var/www/html')
     ->set('branch', function () {
         return input()->getOption('branch') ?: 'production';
@@ -30,6 +32,7 @@ host('staging')
     ->stage('staging')
     ->hostname('167.172.182.96')
     ->user('root')
+    ->identityFile('{{private_key}}')
     ->set('deploy_path', '/var/www/html')
     ->set('branch', function () {
         return input()->getOption('branch') ?: 'master';
