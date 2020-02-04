@@ -87,6 +87,9 @@
     "ocramius/proxy-manager": {
         "version": "2.2.3"
     },
+    "ongoing/deployer-base": {
+        "version": "dev-master"
+    },
     "php": {
         "version": "7.2"
     },

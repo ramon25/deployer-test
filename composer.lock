@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc6645cd6880e7e295da7cfe15fa2f89",
+    "content-hash": "ced33a49c5325d37372516f7141798e5",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1317,6 +1317,30 @@
                 "service proxies"
             ],
             "time": "2019-08-10T08:37:15+00:00"
+        },
+        {
+            "name": "ongoing/deployer-base",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramon25/deployer-base.git",
+                "reference": "20654a9929dc8d9723e6c1fbd4bbacba65aa6c9d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramon25/deployer-base/zipball/20654a9929dc8d9723e6c1fbd4bbacba65aa6c9d",
+                "reference": "20654a9929dc8d9723e6c1fbd4bbacba65aa6c9d",
+                "shasum": ""
+            },
+            "type": "library",
+            "license": [
+                "proprietary"
+            ],
+            "support": {
+                "source": "https://github.com/ramon25/deployer-base/tree/master",
+                "issues": "https://github.com/ramon25/deployer-base/issues"
+            },
+            "time": "2020-02-04T14:53:01+00:00"
         },
         {
             "name": "psr/cache",
@@ -3637,7 +3661,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "ongoing/deployer-base": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
