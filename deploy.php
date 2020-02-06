@@ -7,6 +7,9 @@ set('application', 'symfony-test');
 // Project repository
 set('repository', 'git@github.com:ramon25/deployer-test.git');
 
+set('sentry_organisation', 'usus-gmbh');
+set('sentry_project', 'test');
+
 // Hosts
 host('production')
     ->stage('prod')
@@ -14,6 +17,7 @@ host('production')
     ->user('root')
     ->identityFile('{{private_key}}')
     ->set('deploy_path', '/var/www/html')
+    ->set('sentry_environment', 'prod')
     ->set('branch', function () {
         return input()->getOption('branch') ?: 'production';
     });
@@ -24,6 +28,7 @@ host('production2')
     ->user('root')
     ->identityFile('{{private_key}}')
     ->set('deploy_path', '/var/www/html')
+    ->set('sentry_environment', 'prod')
     ->set('branch', function () {
         return input()->getOption('branch') ?: 'production';
     });
@@ -34,6 +39,7 @@ host('staging')
     ->user('root')
     ->identityFile('{{private_key}}')
     ->set('deploy_path', '/var/www/html')
+    ->set('sentry_environment', 'staging')
     ->set('branch', function () {
         return input()->getOption('branch') ?: 'master';
     });
@@ -54,5 +60,6 @@ task('deploy', [
     'deploy:symlink',
     'deploy:unlock',
     'deploy:tag',
+    'deploy:sentry',
     'cleanup',
 ]);
