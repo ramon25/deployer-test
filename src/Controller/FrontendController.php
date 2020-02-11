@@ -13,7 +13,7 @@ class FrontendController extends AbstractController
     public function index()
     {
         return $this->json([
-            'message' => 'Welcome to your new controller!',
+            'message' => 'Welcome to your new controller! :)',
             'path' => 'src/Controller/FrontendController.php',
         ]);
     }
