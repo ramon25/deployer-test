@@ -1320,16 +1320,16 @@
         },
         {
             "name": "ongoing/deployer-base",
-            "version": "v1.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ongoing/deployer-base.git",
-                "reference": "b01bcec878340d782c58c6325ea51f9fe099ba47"
+                "reference": "1f39337404e64b95622a5872ff0919d165c7ce70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ongoing/deployer-base/zipball/b01bcec878340d782c58c6325ea51f9fe099ba47",
-                "reference": "b01bcec878340d782c58c6325ea51f9fe099ba47",
+                "url": "https://api.github.com/repos/ongoing/deployer-base/zipball/1f39337404e64b95622a5872ff0919d165c7ce70",
+                "reference": "1f39337404e64b95622a5872ff0919d165c7ce70",
                 "shasum": ""
             },
             "type": "library",
@@ -1337,10 +1337,10 @@
                 "proprietary"
             ],
             "support": {
-                "source": "https://github.com/ongoing/deployer-base/tree/master",
+                "source": "https://github.com/ongoing/deployer-base/tree/v1.0.1",
                 "issues": "https://github.com/ongoing/deployer-base/issues"
             },
-            "time": "2020-02-06T10:05:25+00:00"
+            "time": "2020-02-06T10:37:54+00:00"
         },
         {
             "name": "psr/cache",
